@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    
+  }
+  .layout {
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Columna izquierda más ancha */
+  .izquierda {
+    flex: 1.5;
+  }
+  
+  /* Columna derecha más angosta */
+  .derecha {
+    flex: 1;
+  }
+  
+  .card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #8f00ff88;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #8f00ff;
+    box-shadow: 0 0 15px #8f00ff;
+  }
+  
+  h1 {
+    margin: 10px 0;
+    font-size: 2em;
+    color: #00c3ff;
+  }
+  
+  .frase {
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  h2 {
+    border-left: 5px solid #8f00ff;
+    padding-left: 10px;
+    margin-top: 30px;
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  a {
+    color: #00c3ff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-maps {
+    margin-left: 10px;
+    background-color: #8f00ff;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.9em;
+  }
+  
+  .skill {
+    margin-bottom: 15px;
+  }
+  
+  .skill span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .bar {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+  }
+  
+  .fill {
+    height: 100%;
+    background: linear-gradient(90deg, #8f00ff, #00c3ff);
+    animation: fill-grow 2s ease-in-out;
+  }
+  
+  @keyframes fill-grow {
+    from { width: 0; }
+    to { width: inherit; }
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  footer button {
+    background-color: #00c3ff;
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  footer button:hover {
+    background-color: #8f00ff;
+    color: white;
+  }
+
+  .card {
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #8f00ff44;
+    margin-top: 30px;
+  }
+  
+  /* Efecto hover en la imagen */
+  .profile-pic {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #8f00ffaa;
+  }
+  
+  /* Imagen ampliada */
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 13, 13, 0.95);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  #imagen-ampliada {
+    max-width: 90%;
+    max-height: 80%;
+    border: 5px solid #8f00ff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #00c3ffaa;
+  }
+
+  .container.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  /* Las tarjetas se adaptan solas según su contenido */
+  .card {
+    flex: 1 1 auto;
+    max-width: 500px;
+    min-width: 250px;
+  }
+
+  body.light-mode {
+    background-color: #f0f0f0;
+    color: #0d0d0d;
+  }
+  body.light-mode .card {
+    background-color: #ffffff22;
+    box-shadow: 0 0 10px #8f00ff33;
+  }
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #8f00ffaa;
+  }
+  .animal-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .animal-img:hover {
+    transform: scale(1.1);
+  }

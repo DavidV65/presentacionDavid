@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Presentación Personal - David Villca</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+      <img src="foto.jpeg" alt="Foto de David" class="profile-pic" onclick="expandirImagen(this)" />
+      <h1>David Fernando Villca Verduguez</h1>
+      <p class="frase">"La tecnología no duerme, y yo tampoco."</p>
+      <button onclick="cambiarIdioma()" id="boton-idioma">🌐 English</button>
+      <button onclick="toggleDarkMode()">🌙/☀️ Tema</button>
+    </header>
+    <div class="container layout">
+        <div class="col izquierda">
+          <section class="card">
+            <h2 class="i18n" data-es="📌 Datos Personales" data-en="📌 Personal Information">📌 Datos Personales</h2>
+            <ul>
+              <li><strong class="i18n" data-es="Edad:" data-en="Age:">Edad:</strong> <span class="i18n" data-es="19 años" data-en="19 years old">19 años</span></li>
+              <li><strong class="i18n" data-es="Fecha de nacimiento:" data-en="Birthdate:">Fecha de nacimiento:</strong> <span class="i18n" data-es="16 de febrero de 2006" data-en="February 16, 2006">16 de febrero de 2006</span></li>
+              <li><strong class="i18n" data-es="Dirección:" data-en="Address:">Dirección:</strong> Oruro, Bolivia
+                <a href="https://www.google.com/maps/place/Oruro,+Bolivia" target="_blank" class="btn-maps">📍 <span class="i18n" data-es="Ver en mapa" data-en="View on map">Ver en mapa</span></a>
+              </li>
+              <li><strong class="i18n" data-es="Teléfono:" data-en="Phone:">Teléfono:</strong> <a href="tel:+591 69600319">+591 69600319</a></li>
+              <li><strong class="i18n" data-es="Email:" data-en="Email:">Email:</strong> <a href="villcaverduguezd65@gmail.com">villcaverduguezd65@gmail.com</a></li>
+              <li><strong class="i18n" data-es="Estado civil:" data-en="Marital status:">Estado civil:</strong> <span class="i18n" data-es="Soltero" data-en="Single">Soltero</span></li>
+              <li><strong class="i18n" data-es="Nacionalidad:" data-en="Nationality:">Nacionalidad:</strong> <span class="i18n" data-es="Boliviano" data-en="Bolivian">Boliviano</span></li>
+              <li><strong class="i18n" data-es="Idiomas:" data-en="Languages:">Idiomas:</strong> <span class="i18n" data-es="Español (nativo), Inglés (básico)" data-en="Spanish (native), English (basic)">Español (nativo), Inglés (básico)</span></li>
+              <li><strong class="i18n" data-es="Horóscopo:" data-en="Zodiac sign:">Horóscopo:</strong> <span class="i18n" data-es="Acuario ♒" data-en="Aquarius ♒">Acuario ♒</span></li>
+              <li><strong class="i18n" data-es="Meta profesional:" data-en="Career goal:">Meta profesional:</strong> <span class="i18n" data-es="Ser Ingeniero en Sistemas" data-en="Being a systems engineer">Ser Ingeniero en Sistemas</span></li>
+              <li><strong class="i18n" data-es="Red social favorita:" data-en="Favorite social network:">Red social favorita:</strong> <span class="i18n" data-es="Instagram" data-en="Instagram">Instagram</span></li>
+              <li><strong class="i18n" data-es="Color favorito:" data-en="Favorite color:">Color favorito:</strong> <div style="display:inline-block;width:20px;height:20px;background:#000000;border-radius:4px;border:1px solid #ccc;vertical-align:middle;"></div></li>
+              <li><strong class="i18n" data-es="Animal favorito:" data-en="Favorite animal:">Animal favorito:</strong>
+                <img src="lobo.jpg" alt="Lobo" style="width:40px;height:40px;border-radius:8px;cursor:pointer;" onclick="expandirImagen(this)" />
+              </li>
+              <li>
+                <strong class="i18n" data-es="Mascota actual:" data-en="Current pet:">Mascota actual:</strong>
+                <span class="i18n" data-es="Perro llamado Preciosa" data-en="Dog named Preciosa">Perro llamado Preciosa</span>
+                <img src="preciosa.jpeg" alt="Preciosa" class="animal-img" onclick="expandirImagen(this)" style="margin-left: 10px;" />
+              </li>
+              <li><strong class="i18n" data-es="Pasatiempos:" data-en="Hobbies:">Pasatiempos:</strong> <span class="i18n" data-es="Programar juegos, aprender nuevas tecnologías, escuchar música" data-en="Programming games, learning new tech, listening to music , play video games , watch movies">Programar , aprender nuevas tecnologías , escuchar música , jugar videojuegos , ver peliculas </span></li>
+            </ul>
+          </section>
+        </div>
+      
+        <div class="col derecha">
+          <section class="card">
+            <h2 class="i18n" data-es="👋 Sobre mí" data-en="👋 About Me">👋 Sobre mí</h2>
+            <p class="i18n" data-es="Soy estudiante de Sistemas Informáticos, apasionado por el desarrollo web, la programación de videojuegos y las aplicaciones móviles. Me gusta crear, innovar y mejorar siempre."
+               data-en="I'm an IT student passionate about web development, game programming, and mobile apps. I love to create, innovate, and improve constantly.">
+               Soy estudiante de Sistemas Informáticos, apasionado por el desarrollo web, la programación de videojuegos y las aplicaciones móviles.Soy una persona tranquila y callada me gusta disfrutar la vida a mi modo sin que me digan que es lo que puedo hacer y que no, no me doy por vencido facilmente y si lo hago es porque no me intereso aserlo me agradan mas los animales que las personas 
+            </p>
+          </section>
+      
+          <section class="card">
+            <h2 class="i18n" data-es="🧠 Habilidades" data-en="🧠 Skills">🧠 Habilidades</h2>        
+            <div class="skill">
+              <span class="i18n" data-es="Programar" data-en="Programming">Programar</span>
+              <div class="bar"><div class="fill" style="width: 75%"></div></div>
+            </div>          
+            <div class="skill">
+              <span class="i18n" data-es="Tocar la Guitarra" data-en="Playing Guitar">Tocar la Guitarra</span>
+              <div class="bar"><div class="fill" style="width: 75%"></div></div>
+            </div>        
+            <div class="skill">
+              <span class="i18n" data-es="Tocar Piano" data-en="Playing Piano">Tocar Piano</span>
+              <div class="bar"><div class="fill" style="width: 45%"></div></div>
+            </div>         
+            <div class="skill">
+              <span class="i18n" data-es="Reparar Computadoras" data-en="Repairing Computers">Reparar Computadoras</span>
+              <div class="bar"><div class="fill" style="width: 93%"></div></div>
+            </div>         
+            <div class="skill">
+              <span class="i18n" data-es="Reparar todo lo relacionado a dispositivos electrónicos" data-en="Repairing all kinds of electronic devices">Reparar todo lo relacionado a dispositivos electrónicos</span>
+              <div class="bar"><div class="fill" style="width: 89%"></div></div>
+            </div>        
+            <div class="skill">
+              <span class="i18n" data-es="Edición de video" data-en="Video Editing">Edición de video</span>
+              <div class="bar"><div class="fill" style="width: 95%"></div></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    <footer>
+      <button onclick="window.print()">🖨️ Descargar como PDF</button>
+ 
+    </footer>
+  </div>
+
+  <!-- Imagen ampliada -->
+  <div id="overlay" onclick="cerrarImagen()">
+    <img id="imagen-ampliada" />
+  </div>
+
+  <script>
+    function expandirImagen(img) {
+      const overlay = document.getElementById("overlay");
+      const imgAmpliada = document.getElementById("imagen-ampliada");
+      imgAmpliada.src = img.src;
+      overlay.style.display = "flex";
+    }
+
+    function cerrarImagen() {
+      document.getElementById("overlay").style.display = "none";
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("light-mode");
+    }
+
+    let idiomaActual = 'es';
+
+    function cambiarIdioma() {
+      const elementos = document.querySelectorAll('.i18n');
+      idiomaActual = idiomaActual === 'es' ? 'en' : 'es';
+
+      elementos.forEach(el => {
+        const nuevoTexto = el.getAttribute(`data-${idiomaActual}`);
+        if (nuevoTexto) el.textContent = nuevoTexto;
+      });
+
+      const btn = document.getElementById('boton-idioma');
+      btn.textContent = idiomaActual === 'es' ? '🌐 English' : '🌐 Español';
+    }
+  </script>
+</body>
+</html>
